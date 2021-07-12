@@ -13,7 +13,7 @@ class ConferenceController extends AbstractController
     public function index(Request $request): Response{
         $greet = '';
         if ($name = $request->query->get('hello')) {
-            $greet = sprintf('<h1>Hello %s 12345!</h1>', htmlspecialchars($name));
+            $greet = sprintf('<h1>Hello %s !</h1>', htmlspecialchars($name));
         }
         return new Response(<<<EOF
             <html>
