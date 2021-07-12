@@ -15,7 +15,6 @@ class ConferenceController extends AbstractController
         if($name){
             $greet = sprintf('<h1> Hello %s!</h1>', htmlspecialchars($name));
         }
-
         return new Response(<<<EOF
             <html>
                 <body>
