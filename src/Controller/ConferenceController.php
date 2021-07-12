@@ -13,7 +13,7 @@ class ConferenceController extends AbstractController
     public function index(String $name= ''): Response {
         $greet = '';
         if($name){
-            $greet = sprintf('<h1> Hello 125 %s!</h1>', htmlspecialchars($name));
+            $greet = sprintf('<h1> Hello %s!</h1>', htmlspecialchars($name));
         }
 
         return new Response(<<<EOF
