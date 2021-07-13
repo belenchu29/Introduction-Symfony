@@ -45,10 +45,10 @@ class CommentCrudController extends AbstractCrudController
         yield TextField::new('author');
         yield EmailField::new('email');
         yield TextareaField::new('text')
-            ->hideOnIndex()
+            ->hideOnIndex() //Esconde el comentario en la pagina principal
         ;
         yield TextField::new('photoFilename')
-            ->onlyOnIndex()
+            ->onlyOnIndex() // Esconde el campo de introducir foto
         ;
 
         $createdAt = DateTimeField::new('createdAt')->setFormTypeOptions([
