@@ -1,4 +1,5 @@
-<?phpnamespace App\Controller;
+<?php
+namespace App\Controller;
 
 use App\Entity\Comment;
 use App\Message\CommentMessage;
