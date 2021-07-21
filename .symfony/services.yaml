@@ -11,3 +11,6 @@ db:
         vcl: !include
             type: string
             path: config.vcl
+    files:
+        type: network-storage:1.0
+        disk: 256
